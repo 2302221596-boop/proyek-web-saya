@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orangutan Information Center (OTAN)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+        
+        :root {
+            --jungle-green: #1B4332;
+            --sunset-orange: #D97706;
+            --earth-brown: #78350F;
+            --cream-white: #F8F9FA;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--cream-white);
+            color: #333;
+        }
+
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .bg-jungle { background-color: var(--jungle-green); }
+        .text-sunset { color: var(--sunset-orange); }
+        .bg-sunset { background-color: var(--sunset-orange); }
+        .border-sunset { border-color: var(--sunset-orange); }
+
+        .hero-gradient {
+            background: linear-gradient(rgba(27, 67, 50, 0.7), rgba(27, 67, 50, 0.9)), 
+                        url('https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav class="sticky top-0 z-50 bg-white shadow-sm px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <div class="w-10 h-10 bg-sunset rounded-full flex items-center justify-center text-white">
+                <i class="fas fa-leaf"></i>
+            </div>
+            <span class="font-bold text-xl tracking-tight bg-jungle text-white px-2 py-1 rounded">OIC</span>
+        </div>
+        
+        <div class="hidden md:flex space-x-8 font-semibold text-gray-600">
+            <a href="#" class="hover:text-sunset">Beranda</a>
+            <a href="#" class="hover:text-sunset">Program</a>
+            <a href="#" class="hover:text-sunset">Edukasi</a>
+            <a href="#" class="hover:text-sunset">Tentang</a>
+        </div>
+
+        <button class="bg-sunset text-white px-6 py-2 rounded-full font-bold hover:bg-orange-600 transition">
+            Donasi Sekarang
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient h-[80vh] flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-3xl">
+            <h1 class="serif-font text-5xl md:text-7xl mb-6 italic leading-tight">Melindungi Rimba, Menyelamatkan Harapan.</h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90">Bersama Orangutan Information Center, kita memulihkan habitat yang hilang dan menjaga masa depan primata paling cerdas di Asia.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <button class="bg-sunset px-8 py-4 rounded-lg font-bold text-lg hover:scale-105 transition">Adopsi Orangutan</button>
+                <button class="border-2 border-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-jungle transition">Lihat Program Kami</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Metrik Langsung -->
+    <section class="bg-white py-12 px-6 -mt-16 mx-auto max-w-6xl rounded-xl shadow-xl grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+            <p class="text-4xl font-bold text-sunset">250+</p>
+            <p class="text-sm text-gray-500 uppercase tracking-widest font-semibold mt-2">Orangutan Diselamatkan</p>
+        </div>
+        <div>
+            <p class="text-4xl font-bold text-sunset">1.2M+</p>
+            <p class="text-sm text-gray-500 uppercase tracking-widest font-semibold mt-2">Pohon Ditanam</p>
+        </div>
+        <div>
+            <p class="text-4xl font-bold text-sunset">45</p>
+            <p class="text-sm text-gray-500 uppercase tracking-widest font-semibold mt-2">Patroli Hutan Aktif</p>
+        </div>
+        <div>
+            <p class="text-4xl font-bold text-sunset">15rb</p>
+            <p class="text-sm text-gray-500 uppercase tracking-widest font-semibold mt-2">Warga Teredukasi</p>
+        </div>
+    </section>
+
+    <!-- Program Utama -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="serif-font text-4xl mb-4">Misi Kami di Lapangan</h2>
+            <div class="w-24 h-1 bg-sunset mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- HOCRU -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover border border-gray-100">
+                <div class="h-48 bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1591824438708-ce405f36ba3d?auto=format&fit=crop&q=80&w=800" alt="Penyelamatan" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-jungle">Unit HOCRU</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Unit respon cepat untuk menangani konflik manusia-orangutan di perkebunan dan pemukiman.</p>
+                    <a href="#" class="text-sunset font-bold flex items-center gap-2">Selengkapnya <i class="fas fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Reforestasi -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover border border-gray-100">
+                <div class="h-48 bg-gray-200 text-center flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=800" alt="Hutan" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-jungle">Reforestasi</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Mengembalikan fungsi hutan hujan yang rusak menjadi habitat layak bagi satwa liar.</p>
+                    <a href="#" class="text-sunset font-bold flex items-center gap-2">Selengkapnya <i class="fas fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+
+            <!-- Pendidikan -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md card-hover border border-gray-100">
+                <div class="h-48 bg-gray-200">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800" alt="Edukasi" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-xl mb-2 text-jungle">Pendidikan Lokal</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Membangun kesadaran generasi muda di sekitar hutan tentang pentingnya ekosistem.</p>
+                    <a href="#" class="text-sunset font-bold flex items-center gap-2">Selengkapnya <i class="fas fa-arrow-right text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitur Pelaporan -->
+    <section class="bg-jungle py-16 px-6 text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <i class="fas fa-exclamation-triangle text-sunset text-5xl mb-6"></i>
+            <h2 class="serif-font text-3xl mb-4">Melihat Konflik Satwa?</h2>
+            <p class="mb-8 opacity-80">Gunakan fitur pelaporan cepat kami jika Anda menemukan orangutan yang terancam atau masuk ke area perkebunan warga. Tim kami akan segera bertindak.</p>
+            <button class="bg-white text-jungle px-8 py-3 rounded-full font-bold hover:bg-sunset hover:text-white transition">
+                Laporkan Sekarang
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+            <div>
+                <h4 class="font-bold text-lg mb-6">OIC Center</h4>
+                <p class="text-gray-400 text-sm">Menyelamatkan orangutan, menyelamatkan masa depan bumi. Berbasis di Sumatra, Indonesia.</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Tautan Cepat</h4>
+                <ul class="text-gray-400 text-sm space-y-4">
+                    <li><a href="#" class="hover:text-sunset">Laporan Transparansi</a></li>
+                    <li><a href="#" class="hover:text-sunset">Karier Relawan</a></li>
+                    <li><a href="#" class="hover:text-sunset">Blog Rimba</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Kontak</h4>
+                <p class="text-gray-400 text-sm">info@orangutancenter.org<br>+62 (61) 1234 5678</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6">Ikuti Kami</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sunset"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sunset"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sunset"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-xs">
+            &copy; 2024 Orangutan Information Center. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
